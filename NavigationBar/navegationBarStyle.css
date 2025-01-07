@@ -1,0 +1,42 @@
+body {
+  margin: 0px;
+}
+
+main {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+main p {
+  font-weight: 150;
+}
+
+h1 {
+  text-align: center;
+}
+
+.bar ul {
+  list-style-type: none;
+  background-color: hsl(0, 0%, 25%);
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.bar li {
+  border-right: 2px solid;
+  float: left;
+}
+
+.bar a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+}
+
+.bar a:hover {
+  background-color: hsl(0, 0%, 10%);
+}
+

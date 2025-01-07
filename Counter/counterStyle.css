@@ -1,0 +1,29 @@
+body {
+  font-family: Helvetica;
+  margin: 0;
+}
+
+#display {
+  padding-top: 10px;
+  display: block;
+  text-align: center;
+  font-size: 10em;
+}
+
+#buttonContainer {
+  text-align: center;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 1.5em;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(214, 100%, 74%);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+.button:hover {
+  background-color: hsl(214, 100%, 56%);
+}

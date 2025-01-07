@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation Page</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link rel="stylesheet" href="technicalDocStyle.css" />
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <!-- NAV -->
+
+      <nav id="navbar">
+        <header><h1>CSS Documentation</h1></header>
+        <ul>
+          <li>
+            <a class="nav-link" href="#Introduction">Introduction</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#What_is_CSS?">What is CSS?</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Prerequisites">Prerequisites</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Anatomy_of_a_CSS_ruleset"
+              >Anatomy of a CSS ruleset</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="#How_does_CSS_actually_work?"
+              >How does CSS actually work?</a
+            >
+          </li>
+          <li>
+            <a class="nav-link no-divider" href="#Reference">Reference</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- MAIN -->
+
+      <main id="main-doc">
+        <!-- INTRODUCTION -->
+
+        <section id="Introduction" class="main-section">
+          <header><h1>Introduction</h1></header>
+          <article>
+            <p>
+              Cascading Style Sheets (CSS) is a stylesheet language used to
+              describe the presentation of a document written in HTML or XML
+              (including XML dialects such as SVG, MathML or XHTML). CSS
+              describes how elements should be rendered on screen, on paper, in
+              speech, or on other media. CSS is among the core languages of the
+              open web and is standardized across Web browsers according to W3C
+              specifications. Previously, the development of various parts of
+              CSS specification was done synchronously, which allowed the
+              versioning of the latest recommendations. You might have heard
+              about CSS1, CSS2.1, or even CSS3. There will never be a CSS3 or a
+              CSS4; rather, everything is now CSS without a version number.
+              After CSS 2.1, the scope of the specification increased
+              significantly and the progress on different CSS modules started to
+              differ so much, that it became more effective to develop and
+              release recommendations separately per module. Instead of
+              versioning the CSS specification, W3C now periodically takes a
+              snapshot of the latest stable state of the CSS specification and
+              individual modules progress. CSS modules now have version numbers,
+              or levels, such as CSS Color Module Level 5.
+            </p>
+          </article>
+        </section>
+
+        <!-- WHAT IS -->
+
+        <section id="What_is_CSS?" class="main-section">
+          <header><h1>What is CSS?</h1></header>
+          <article>
+            <p>
+              Like HTML, CSS is not a programming language. It's not a markup
+              language either. CSS is the code that styles web content. We'll
+              answer questions like: How do I make text red? How do I make
+              content display at a certain location in the (webpage) layout? How
+              do I decorate my webpage with background images and colors? CSS is
+              what you use to selectively style HTML elements.
+            </p>
+          </article>
+        </section>
+
+        <!-- PREREQUISITES -->
+
+        <section id="Prerequisites" class="main-section">
+          <header><h1>Prerequisites</h1></header>
+          <article>
+            <h4>This guide assumes you have the following background:</h4>
+            <ul>
+              <li>
+                Basic familiarity with using computers and using the Web
+                passively (i.e. looking at it, consuming the content.)
+              </li>
+              <li>
+                A basic work environment set up, as detailed in Installing basic
+                software, and an understanding of how to create and manage
+                files, as detailed in Dealing with files.
+              </li>
+              <li>
+                Basic familiarity with HTML, as discussed in the Introduction to
+                HTML module.
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <!-- RULESET -->
+
+        <section id="Anatomy_of_a_CSS_ruleset" class="main-section">
+          <header><h1>Anatomy of a CSS ruleset</h1></header>
+          <article>
+            <p>
+              Let's dissect the CSS code for red paragraph text to understand
+              how it works:
+            </p>
+            <div class="code-block">
+              <pre>
+              <code>
+
+        p { 
+          color: red;        
+        }
+              </code>
+            </pre>
+            </div>
+            <p>
+              The whole structure is called a ruleset. (The term
+              <em>ruleset</em> is often referred to as just <em>rule</em>.) Note
+              the names of the individual parts:
+            </p>
+
+            <p>
+              This is the HTML element name at the start of the ruleset. It
+              defines the element(s) to be styled (in this example,
+              <code>&lt;p&gt;</code>
+              elements). To style a different element, change the selector.
+            </p>
+
+            <p>
+              This is a single rule like <code>color: red;</code>. It specifies
+              which of the element's properties you want to style.
+            </p>
+
+            <p>
+              These are ways in which you can style an HTML element. (In this
+              example, <code>color</code> is a property of the
+              <code>&lt;p&gt;</code>
+              elements.) In CSS, you choose which properties you want to affect
+              in the rule.
+            </p>
+
+            <p>
+              To the right of the property—after the colon—there is the property
+              value. This chooses one out of many possible appearances for a
+              given property. (For example, there are many
+              <code>color</code> values in addition to <code>red</code>.)
+            </p>
+
+            <p>Note the other important parts of the syntax:</p>
+
+            <ul>
+              <li>
+                Apart from the selector, each ruleset must be wrapped in curly
+                braces. (<code>{}</code>)
+              </li>
+
+              <li>
+                Within each declaration, you must use a colon (<code>:</code>)
+                to separate the property from its value or values.
+              </li>
+
+              <li>
+                Within each ruleset, you must use a semicolon (<code>;</code>)
+                to separate each declaration from the next one.
+              </li>
+            </ul>
+
+            <p>
+              To modify multiple property values in one ruleset, write them
+              separated by semicolons, like this:
+            </p>
+
+            <div class="code-block">
+              <pre>
+              <code>
+
+        p {
+          color : red;
+          width : 500px;
+          border : 1px solid black;        
+        }
+              </code>
+            </pre>
+            </div>
+          </article>
+        </section>
+
+        <!-- CSS WORKS -->
+
+        <section id="How_does_CSS_actually_work?" class="main-section">
+          <header><h1>How does CSS actually work?</h1></header>
+          <article>
+            <p>
+              When a browser displays a document, it must combine the document's
+              content with its style information. It processes the document in a
+              number of stages, which we've listed below. Bear in mind that this
+              is a very simplified version of what happens when a browser loads
+              a webpage, and that different browsers will handle the process in
+              different ways. But this is roughly what happens.
+            </p>
+            <ul>
+              <li>
+                The browser loads the HTML (e.g. receives it from the network).
+              </li>
+              <li>
+                It converts the HTML into a DOM (Document Object Model). The DOM
+                represents the document in the computer's memory. The DOM is
+                explained in a bit more detail in the next section.
+              </li>
+              <li>
+                The browser then fetches most of the resources that are linked
+                to by the HTML document, such as embedded images, videos, and
+                even linked CSS! JavaScript is handled a bit later on in the
+                process, and we won't talk about it here to keep things simpler.
+              </li>
+              <li>
+                The browser parses the fetched CSS, and sorts the different
+                rules by their selector types into different "buckets", e.g.
+                element, class, ID, and so on. Based on the selectors it finds,
+                it works out which rules should be applied to which nodes in the
+                DOM, and attaches style to them as required (this intermediate
+                step is called a render tree).
+              </li>
+              <li>
+                The render tree is laid out in the structure it should appear in
+                after the rules have been applied to it.
+              </li>
+              <li>
+                The visual display of the page is shown on the screen (this
+                stage is called painting).
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <!-- REFERENCE -->
+
+        <section id="Reference" class="main-section">
+          <header><h1>Reference</h1></header>
+          <article>
+            <li>
+              All the documentation in this page is taken from
+              <a
+                id="ref-link"
+                href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps"
+                target="_blank"
+                >MDN</a
+              >.
+            </li>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

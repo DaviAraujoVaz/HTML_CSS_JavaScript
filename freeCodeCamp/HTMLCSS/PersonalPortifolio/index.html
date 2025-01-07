@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e1c9524d6c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="#welcome-section">Welcome</a>
+      <a href="#projects">Projects</a>
+      <a href="#about-me">About Me</a>
+    </nav>
+
+    <main>
+      <section id="welcome-section">
+        <h1 id="introduction">Hey, I am Davi</h1>
+        <p id="sub-introduction">a developer</p>
+      </section>
+
+      <section id="projects">
+        <div class="section-header">
+          <h1>Some projects that I have worked on:</h1>
+          <hr id="section-header-underline" />
+        </div>
+        <div class="projects-grid">
+          <div class="project-tile">
+            <a href="">
+              <img
+                src="/imagens/Tribute.png"
+                alt="project"
+                class="project-image"
+              />
+
+              <h2>Tribute Page</h2>
+            </a>
+          </div>
+
+          <div class="project-tile">
+            <a href="">
+              <img
+                src="/imagens/Documentation.png"
+                alt="project"
+                class="project-image"
+              />
+
+              <h2>Documentation Page</h2>
+            </a>
+          </div>
+
+          <div class="project-tile">
+            <a href="">
+              <img
+                src="/imagens/Product.png"
+                alt="project"
+                class="project-image"
+              />
+
+              <h2>Product Landing Page</h2></a
+            >
+          </div>
+        </div>
+
+        <a href=""></a>
+      </section>
+
+      <section id="about-me">
+        <h1>Find me on</h1>
+
+        <div class="contact-links">
+          <a target="_blank" href="mailto:davi.ara.vaz@gmail.com"
+            ><i class="fa-solid fa-envelope"></i> Send a mail</a
+          >
+
+          <a target="_blank" href="https://www.linkedin.com/in/davi-araujo-vaz/"
+            ><i class="fa-brands fa-linkedin"></i> Linkedin</a
+          >
+
+          <a
+            id="profile-link"
+            target="_blank"
+            href="https://github.com/DaviAraujoVaz"
+          >
+            <i class="fa-brands fa-github"></i> GitHub</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const nav = document.querySelector("#navbar");
+      const subIntroduction = document.querySelector("#sub-introduction");
+      const hr = document.querySelector("#section-header-underline");
+
+      nav.addEventListener("mouseover", function () {
+        subIntroduction.style.color = "#a72400";
+
+        hr.style.borderColor = "#a72400";
+        hr.style.boxShadow = "0 0 10px 1px #da2f00";
+      });
+
+      nav.addEventListener("mouseout", function () {
+        subIntroduction.style.color = "#a87900";
+
+        hr.style.borderColor = "#a87900";
+        hr.style.boxShadow = "0 0 10px 1px #db9d00";
+      });
+    </script>
+  </body>
+</html>

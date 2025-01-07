@@ -1,0 +1,96 @@
+:root {
+  --backgorund-color: #201a23;
+  --background-color-sec: #2e2532;
+  --text-color: #fbfbfb;
+  --detail-color1: #9e4770;
+  --detail-color2: #631d76;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--backgorund-color);
+  background-attachment: fixed;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--text-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  font-size: 1.7em;
+  font-family: Geneva, Tahoma, sans-serif;
+  color: var(--text-color);
+  text-align: center;
+}
+
+input {
+  background-color: var(--background-color-sec);
+  color: var(--text-color);
+  margin: 5px;
+}
+
+label {
+  font-size: 1.7em;
+  font-family: Geneva, Tahoma, sans-serif;
+  color: var(--text-color);
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+#number {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--text-color);
+  border-radius: 4px;
+}
+
+#convert-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--detail-color1);
+  color: var(--text-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#convert-btn:hover {
+  background-color: var(--detail-color2);
+}
+
+#output {
+  background-color: var(--background-color-sec);
+  color: var(--text-color);
+  border: 3px solid var(--detail-color2);
+  border-radius: 4px;
+  padding: 10px;
+  width: 30vw;
+  margin-top: 20px;
+}

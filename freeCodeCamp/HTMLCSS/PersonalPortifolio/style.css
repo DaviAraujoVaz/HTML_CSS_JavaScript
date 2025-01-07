@@ -1,0 +1,276 @@
+:root {
+  scroll-behavior: smooth;
+
+  --main-black: hsl(0, 0%, 5%);
+  --main-light-black: hsl(0, 0%, 15%);
+  --main-lighter-black: hsl(0, 0%, 25%);
+
+  --main-white: hsl(0, 0%, 100%);
+
+  --main-gray: hsl(0, 0%, 50%);
+
+  --main-dark-gold: hsl(43, 100%, 23%);
+  --main-gold: hsl(43, 100%, 33%);
+  --main-light-gold: hsl(43, 100%, 43%);
+
+  --main-blue: hsl(193, 100%, 23%);
+
+  --main-dark-red: hsl(13, 100%, 15%);
+  --main-red: hsl(13, 100%, 33%);
+  --main-light-red: hsl(13, 100%, 43%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: Arial, sans-serif;
+
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+img {
+  display: block;
+
+  width: 25rem;
+  height: 22rem;
+
+  object-fit: cover;
+  object-position: top;
+
+  border-radius: 5px 5px 0 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+#navbar {
+  position: fixed;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  margin: 0 2rem 1rem 0;
+  padding-right: 3rem;
+
+  height: 4.5rem;
+  width: 100%;
+
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  background-color: var(--main-gold);
+
+  transition: ease-in-out 0.3s;
+}
+
+#navbar a {
+  height: 100%;
+
+  padding: 1.5rem;
+
+  font-size: 1.4rem;
+  font-weight: 600;
+
+  color: var(--main-black);
+
+  transition: ease-in-out 0.3s;
+}
+
+#navbar:hover {
+  background-color: var(--main-red);
+}
+
+#navbar a:hover {
+  background-color: var(--main-light-red);
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  width: 100vw;
+
+  background-image: linear-gradient(
+    62deg,
+    var(--main-black) 0%,
+    var(--main-lighter-black) 100%
+  );
+
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
+}
+
+#welcome-section h1 {
+  margin: 0 0 0.3rem;
+
+  color: var(--main-white);
+
+  font-size: 3rem;
+}
+
+#welcome-section p {
+  margin: 0;
+
+  color: var(--main-light-gold);
+
+  font-size: 1.5rem;
+
+  transition: ease-in-out 0.3s;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  width: 100vw;
+
+  background-color: var(--main-blue);
+
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
+}
+
+.section-header {
+  margin: 7.5rem 0 0.5rem;
+
+  width: 70%;
+
+  text-align: center;
+
+  font-size: 2rem;
+}
+
+.section-header h1 {
+  margin: 0;
+
+  color: var(--main-white);
+}
+
+.section-header hr {
+  margin: 0.5rem 0 1rem;
+
+  width: 100%;
+
+  box-shadow: 0 0 10px 1px var(--main-light-gold);
+  border: 1px solid var(--main-gold);
+
+  transition: ease-in-out 0.3s;
+}
+
+.projects-grid {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, minmax(25rem, 1fr));
+  gap: 1rem;
+
+  width: 100%;
+
+  padding: 3rem;
+}
+
+.projects-grid a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 25rem;
+
+  color: var(--main-black);
+
+  transition: ease-in-out 0.3s;
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+
+  width: 25rem;
+}
+
+.project-tile h2 {
+  margin: 0;
+  padding-top: 1rem;
+
+  width: 25rem;
+  height: 4rem;
+
+  font-size: 1.5rem;
+  text-align: center;
+
+  color: var(--main-white);
+  background-color: var(--main-light-black);
+
+  border-radius: 0 0 5px 5px;
+}
+
+#about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  width: 100vw;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  background-image: linear-gradient(
+    36deg,
+    var(--main-dark-red) 0%,
+    var(--main-black) 100%
+  );
+}
+
+#about-me h1 {
+  margin: 0 0 5rem;
+
+  color: var(--main-white);
+
+  font-size: 4rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 50%;
+
+  padding: 1rem 0;
+}
+
+.contact-links a {
+  font-size: 2rem;
+  color: var(--main-white);
+
+  transition: ease-in-out 0.2s;
+}
+
+.contact-links a:hover {
+  transform: translateY(-0.5rem);
+}
+
+@media screen and (width < 1100px) {
+  #navbar {
+    justify-content: center;
+    padding-right: 0;
+  }
+}

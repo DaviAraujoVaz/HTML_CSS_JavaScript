@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-sc   ale=1.0" />
+    <title>FreeCodeCamp-Form</title>
+    <link rel="stylesheet" href="formStyle.css" />
+  </head>
+  <body>
+    <div id="form">
+      <h1 id="title">FreeCodeCamp-Form</h1>
+      <p id="description">
+        Please fill out this form with the required information
+      </p>
+
+      <form id="survey-form" action="">
+        <fieldset>
+          <label id="name-label" for="name"
+            >Name:
+            <input id="name" type="text" placeholder="Enter your name" required
+          /></label>
+
+          <label id="email-label" for="email"
+            >Email:
+            <input id="email" type="email" placeholder="Email" required />
+          </label>
+
+          <label id="number-label" for="number"
+            >Age:
+            <input
+              id="number"
+              type="number"
+              min="13"
+              max="120"
+              placeholder="Age"
+              required
+            />
+          </label>
+
+          <label for="dropdown">
+            Which option best describes you current role?
+            <select id="dropdown">
+              <option value="">Select current role</option>
+              <option value="1">Student</option>
+              <option value="2">Full time job</option>
+              <option value="3">Other</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <label for="radio"
+            >Would you recommend this form?
+            <div id="radio">
+              <label for="def">
+                <input
+                  id="def"
+                  name="recomend"
+                  type="radio"
+                  class="inline"
+                  value="1"
+                  checked
+                />Definitely
+              </label>
+
+              <label for="may"
+                ><input
+                  id="may"
+                  name="recomend"
+                  type="radio"
+                  class="inline"
+                  value="2"
+                />Maybe
+              </label>
+
+              <label for="not"
+                ><input
+                  id="not"
+                  name="recomend"
+                  type="radio"
+                  class="inline"
+                  value="3"
+                />Not sure
+              </label>
+            </div>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <label for="checkbox"
+            >Select the programing languages that you used at least once:
+            <div id="checkbox">
+              <label for="javascript"
+                ><input
+                  id="javascript"
+                  value="1"
+                  type="checkbox"
+                  class="inline"
+                />JavaScript
+              </label>
+
+              <label for="python"
+                ><input
+                  id="python"
+                  value="2"
+                  type="checkbox"
+                  class="inline"
+                />Python
+              </label>
+
+              <label for="c"
+                ><input id="c" value="3" type="checkbox" class="inline" />C
+              </label>
+
+              <label for="cpp"
+                ><input id="cpp" value="4" type="checkbox" class="inline" />C++
+              </label>
+
+              <label for="rust"
+                ><input
+                  id="rust"
+                  value="5"
+                  type="checkbox"
+                  class="inline"
+                />Rust
+              </label>
+            </div>
+          </label>
+
+          <label for="bio">
+            Describe yourself:
+            <textarea
+              id="bio"
+              cols="30"
+              rows="10"
+              placeholder="I love travelling..."
+            ></textarea>
+          </label>
+
+          <button id="submit" type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

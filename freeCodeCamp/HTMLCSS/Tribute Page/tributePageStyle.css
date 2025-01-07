@@ -1,0 +1,115 @@
+:root {
+    --darkAccent: hsl(238, 32%, 45%);
+    --lightAccent: hsl(237, 98%, 82%);
+    --mainAccent: hsl(237, 98%, 75%);
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 16px;
+    background-color: var(--darkAccent);
+  }
+  
+  body {
+    background-color: var(--darkAccent);
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+      "Helvetica Neue", Arial, sans-serif;
+    width: clamp(300px, 96%, 700px);
+    margin: auto;
+    padding: 1px 0;
+  }
+  
+  header {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {
+    margin: 8px 0 11px;
+    padding-bottom: 11px;
+  }
+  
+  #main {
+    margin: 30px 20px;
+    padding: 10px;
+    background-color: var(--mainAccent);
+    border-radius: 10px;
+  }
+  
+  #title {
+    margin: 10px 10px 0;
+    padding: 0;
+  }
+  
+  #subtitle {
+    font-style: italic;
+    font-weight: 600;
+    margin: 0 10px 10px;
+    padding: 0;
+  }
+  
+  #img-div {
+    border-radius: 3px;
+    background-color: var(--lightAccent);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #image {
+    border-radius: 2px;
+    margin: 11px 11px 5px;
+    width: 96%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  
+  #img-caption {
+    margin: 0 14px;
+    padding: 0 5px 10px;
+  }
+  
+  #info-div {
+    border-radius: 3px;
+    background-color: var(--lightAccent);
+  }
+  
+  #tribute-info {
+    margin: 11px 11px 0;
+    padding: 11px 8px 0;
+    font-weight: 700;
+  }
+  
+  #link-div {
+    border-radius: 3px;
+    background-color: var(--lightAccent);
+    padding: 10px;
+  }
+  
+  #link-div p {
+    margin: 0;
+    font-style: oblique;
+    font-weight: 500;
+  }
+  
+  a {
+    text-decoration: underline;
+    font-style: normal;
+    font-weight: 600;
+  }
+  
+  a {
+    color: hsl(62, 100%, 50%);
+  }
+  
+  a:hover {
+    color: hsl(62, 100%, 45%);
+  }
+  
