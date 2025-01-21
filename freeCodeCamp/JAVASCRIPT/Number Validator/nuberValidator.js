@@ -4,7 +4,7 @@ const clearBtn = document.getElementById("clear-btn");
 const userInput = document.getElementById("user-input");
 const targetResult = document.querySelector(`#results-div`);
 
-const regex = /^1?(| ?(?=\d{3}-|\d{3} )| \(?(?=\d{3}\) \d{3}-)|\(?(?=\d{3}\)))\d{3}(-?(?=\d{3}-)| ?(?=\d{3} )|\)?|\) ?)\d{3}(-?| ?)\d{4}$/g;
+const regex = /^1?(| ?(?=\d{3}-|\d{3} )| \(?(?=\d{3}\) \d{3}-)|\(?(?=\d{3}\)))[2-9]\d{2}(-?(?=\d{3}-)| ?(?=\d{3} )|\)?|\) ?)[2-9]\d{2}(-?| ?)\d{4}$/g;
 
 function isValidNumber() {
     const input = userInput.value;
